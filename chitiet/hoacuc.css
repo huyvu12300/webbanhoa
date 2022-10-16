@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    margin: 0px auto;
+    max-width: 70%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color:#fff;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px 0px;
+    transition: all 0.5s ease-in-out;
+
+}
+header.sticky{
+    background: #fff;
+    opacity: 1;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header.sticky .logo{
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+header.sticky .logo:hover{
+    transition: ease-in 0.4s;
+    -moz-transition: ease-in 0.4s;
+    -webkit-transition: ease-in 0.4s;
+}
+header.sticky .main-menu > li > a{
+    color: black;
+}
+ header.sticky .main-menu > li > a:hover{
+    background-color: black;
+    color: white;
+    transition: ease-in 0.4s;
+    -moz-transition: ease-in 0.4s;
+    -webkit-transition: ease-in 0.4s;
+    position: relative;
+}
+header.sticky .main-menu .list_sale_main-menu> li > a{
+   background: #fff;
+   color: black;
+   padding: 10px 0px;
+}
+header.sticky .main-menu .list_sale_main-menu{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+header.sticky .main-menu .list_sale_main-menu > li > a:hover{
+    background-color: black;
+    color: white;
+    transition: ease 0.4s;
+    -moz-transition: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    position: relative;
+}
+.logo{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    display: block;
+    padding: 5px;
+}
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu{
+    display: flex;
+}
+.main-menu > li{
+    display: block;
+}
+.main-menu > li:hover .list_sale_main-menu{
+    display: block;
+}
+.main-menu > li > a{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+.main-menu > li > a:hover{
+    position: relative;
+    transition: ease 0.35s;
+    -moz-transition: ease 0.35s;
+    -webkit-transition:ease 0.35s;
+}
+.main-menu > .list_sale_main-menu{
+    list-style: none;
+    display: none;
+}
+.list_sale_main-menu{
+    position: absolute;
+    display: none;
+}
+.list_sale_main-menu > li{
+    list-style: none;
+}
+.list_sale_main-menu > li > a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    
+
+}
+.event_list_sale_main-menu{
+    display: flex;
+    position: absolute;
+}
+.event_list_sale_main-menu > li{
+    display: none;
+    list-style: none;
+}
+.event_list_sale_main-menu > li > a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: white;
+}
+.seson_list_sale_main-menu{
+    display: flex;
+    position: absolute;
+}
+.seson_list_sale_main-menu>li{
+    display: none;
+    list-style: none;
+}
+.seson_list_sale_main-menu > li > a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: white;
+    
+}
+.list_sale_main-menu > li > a:hover{
+    background: black;
+    color: white;
+    transition: ease 0.35s;
+    -moz-transition: ease 0.35s;
+    -webkit-transition: ease 0.35s;
+}
+.banner{
+    background: url(../hoa/banner9.png);
+    min-height: 480px;
+    width: 100%;
+    background-size:cover;
+}
+.contenr{
+    max-width: 100%;
+    min-height: 800px;
+    margin-top: 20px;
+}
+.name-list{
+    width: 100%;
+    margin: auto;
+    height: 55px;
+    justify-content: center;
+    padding-top: 12px;
+    font-size: 30px;
+}
+h2.name-list{
+    margin: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    color: black;
+    text-align: center;
+}
+div.list-sale{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+div.list-sale > div{
+    width: 40%;
+    margin-top: 2%;
+}
+
+div.list-sale > div > ul > li > a > img{
+    width: 100%;
+}
+div.list-sale > div.a{
+    margin-right: 3%;
+    margin-left: 7%;
+}
+div.list-sale > div.b{
+    margin-right: 7%;
+    margin-left: 3%;
+}
+
+.list-sale > div.a > ul > li{
+    max-width: 100%;
+    float: right;
+    justify-content: center;
+    margin: 20px;
+    overflow: hidden;
+    right: 30%;
+}
+.list-sale > div.b > ul > li{
+    max-width: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+.list-sale > div.a > ul > li > a:hover img{
+    transform: scale(1.1);
+    
+}
+
+.list-sale > div.a > ul > li > a > img{
+    max-width: 100%; 
+    display: block;
+    transition: all 0.3s ease-in-out;  
+}
+
+
+ .list-sale > div.a > ul > li > a{
+    position: relative;
+    display: block;
+   
+} 
+.list-sale > div.b > ul > li > p{
+    color: black;
+    display: block;
+    font-size: 21px;
+} 
+.list-sale > div.b > ul > li:first-child{
+    color: black;
+    display: block;
+    font-weight: bold;
+    font-size: 21px;
+} 
+.ip_SL{
+    margin: 20px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: large;
+    border-radius: 5px;
+}
+.btn_add-sale{
+    height: 36px;
+    padding: 0px 10px;
+    background-color:burlywood;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px; border:1px solid white;
+    font-size: large;
+    
+}
+.btn_buy{
+    margin: 20px;
+    width: 260px;
+    height: 60px;
+    border-radius: 5px; border:1px solid white;
+    font-size: larger;
+    background-color:burlywood;
+
+}
+.btn_htline{
+    margin: 20px;
+    width: 260px;
+    height: 60px;
+    border-radius: 5px; border:1px solid white;
+    font-size: larger;
+    background-color:burlywood;
+    
+}
+.list-sale > div.a > ul > li > a> .name{
+    position: absolute;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    bottom: 0px;
+    left: 50%;
+    font-size: 28px;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+
+.footer{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    padding-top: 60px;
+}
+
+.footer > p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer > p{
+    color: black;
+    font-size: large;
+    text-align:center;
+    
+}

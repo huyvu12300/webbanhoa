@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose</title>
+    <link rel="stylesheet" href="hoacuc.css">
+</head>
+<body>
+    <div class="all">
+        <header>
+            <div class="inner-header container" >
+                <a href="../index.php" class="logo">Sunshine</a>
+                <nav>
+                    <ul class="main-menu">
+                       
+                        <li><a href="">Sản Phẩm</a>
+                        <ul class="list_sale_main-menu">
+                            <li><a href="../even.html">Sự Kiện</a></li>
+                            <li><a href="../seson.html">Hoa Theo Mùa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="../gioithieu.html">Giới Thiệu</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                        <li><a href="">Giỏ Hàng</a></li>
+                        <li><a href="user/login.php">Đăng Nhập</a></li>
+                        <li><a href="user/registry.php">Đăng Ký</a></li>
+                    </ul>
+                </nav>
+              
+            </div>
+        </header>
+        <div class="banner">
+            
+        </div>
+        <div class="contenr">
+            <h2 class="name-list"></h2>
+                <div class="list-sale">
+                    <div class="a">
+                        <ul>
+                        <li><a href=""><img src="../hoa/hoacuc.jpeg" alt="">
+                        
+                    </a></li>
+                    </ul>
+                    </div>
+                    <div class="b">
+                        
+                        <ul>
+                            <li><p>Hoa Cúc</p></li>
+                            <li><p>450.000 VND</p></li>
+                            <li><p>Giao Hàng Nhanh Trong Nội Thành TP.HCM</p></li>
+                            <li><p>Được Chọn Lọc Từ Những Bông Hoa Đẹp</p></li>
+                            <li><p>Mức Giá Cạnh Tranh</p></li>
+                            <li><p>Hoàn Tiền Nếu Bạn Không Hài Lòng</p></li>
+                            
+                        </ul>
+                        
+                        <input type="number" step="1" min="1" value="1" size="4" inputmode="numeric" class="ip_SL">
+                        <a href=""><button type="submit" class="btn_add-sale">Thêm Vào Giỏ Hàng</button></a><br>
+                        <a href=""><button type="submit" class="btn_buy">Mua Ngay</button></a><br>
+                        <button type="submit" class="btn_htline">Hotline: (028) 5445 7777</button>
+                    </div>
+                    
+                    
+                    
+                </div>
+           
+        </div>
+        <div class="footer">
+            <p>Thông Tin Lạc</p>
+            <p>Khu Công nghệ cao TP.HCM, Xa lộ Hà Nội, P.Hiệp Phú, TP.Thủ Đức, TP.HCM</p>
+            <p>Điện thoại: (028) 5445 7777 - Fax: (028) 5445 4444</p>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky');
+                }else{
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
