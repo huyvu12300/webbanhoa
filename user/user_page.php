@@ -1,6 +1,12 @@
 <?php
+include('../user/connect.php');
 session_start();
-  
+
+$user_id = $_SESSION['user_id'];
+if(!isset($user_id))
+{
+    header('location:login.php');
+};
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +28,7 @@ session_start();
       <p>this is an user page</p>
       <a href="registry.php" class="btn">register</a>
       <a href="logout.php" class="btn">logout</a>
+      <a href="user_profile.php" class="btn">profile</a>
    </div>
 
 </div>

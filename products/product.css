@@ -1,21 +1,74 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
 }
-ul{
+.all{
+    background-color: rgb(247, 246, 243);
+    margin-top: 80px;
+}
+.bar{
+    width: 600px;
+    margin: 0 auto;
+    height: 50px;
+}
+.contaiter{
+    display: block;
+}
+ul.list_bar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14px;
+}
+.list_bar > li > a{
+    font-size: large;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+img{
+    width: 350px;
+}
+ul.list_product {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.list_product > li{
+    text-align: center;
+    margin:  25px;
+}
+.name_pro{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    display: block;
+    
+}
+.product_content{
+    height: 60px;
+    
+}
+.product_border{
+    border: 1px solid rgb(244, 229, 201);
+    border-radius: 10px;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    background: radial-gradient(white 30%, lightblue 70%);
+  }
+  ul{
     list-style: none;
 }
 a{
     text-decoration:none;
-}
-.container{
-    margin: 0px auto;
-    max-width: 70%;
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    background-color:#fff;
 }
 header{
     position: fixed;
@@ -28,7 +81,7 @@ header{
     
 
 }
-header.sticky{
+header{
     background: #fff;
     opacity: 1;
     padding: 15px 0px;
@@ -37,20 +90,20 @@ header.sticky{
     
 }
 
-header.sticky .logo{
+header .logo{
     color: black;
     border: 2px solid black;
     border-radius: 5px;
 }
-header.sticky .logo:hover{
+header .logo:hover{
     transition: ease 0.4s;
     -moz-transition: ease 0.4s;
     -webkit-transition: ease 0.4s;
 }
-header.sticky .main-menu > li > a{
+header .main-menu > li > a{
     color: black;
 }
- header.sticky .main-menu > li > a:hover{
+ header .main-menu > li > a:hover{
     background-color: black;
     color: white;
     transition: ease 0.4s;
@@ -58,15 +111,15 @@ header.sticky .main-menu > li > a{
     -webkit-transition: ease 0.4s;
     position: relative;
 }
-header.sticky .main-menu .list_sale_main-menu> li > a{
+header .main-menu .list_sale_main-menu> li > a{
    background: #fff;
    color: black;
    padding: 10px 0px;
 }
-header.sticky .main-menu .list_sale_main-menu{
+header .main-menu .list_sale_main-menu{
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-header.sticky .main-menu .list_sale_main-menu > li > a:hover{
+header .main-menu .list_sale_main-menu > li > a:hover{
     background-color: black;
     color: white;
     transition: ease 0.4s;
@@ -176,105 +229,29 @@ header.sticky .main-menu .list_sale_main-menu > li > a:hover{
     -moz-transition: ease 0.35s;
     -webkit-transition: ease 0.35s;
 }
-.banner{
-    background: url(hoa/banner9.png);
-    min-height: 480px;
-    width: 100%;
-    background-size:cover;
-}
-.contenr{
-    max-width: 100%;
-    min-height: 800px;
-    margin-top: 20px;
-    
-}
-.name-list{
-    width: 100%;
-    margin: auto;
-    height: 55px;
-    justify-content: center;
-    padding-top: 12px;
-    font-size: 30px;
-}
-h2.name-list{
-    margin: auto;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    color: black;
-    text-align: center;
-    
-    
-}
-.flower_list{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.new-content{
-    width: 100%;
-    height: max-content;
-    margin: auto;
-}
-.title_new-content{
-    width: 100%;
-    margin: auto;
-    height: 55px;
-    justify-content: center;
-    padding-top: 12px;
-    font-size: 30px;
-}
-h2.title_new-content{
-    color: black;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*border-bottom: 1px solid black;*/
-    border-top: 1px solid black;
-}
-.new-content > p{
-    color: black;
-    width: 80%;
-    margin: auto;
-    font-size: large;
-    
-}
-.footer{
-    width: 100%;
-    height: 150px;
-    border: 1px solid black;
-    padding-top: 60px;
-}
-
-.footer > p:first-child{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.footer > p{
-    color: black;
-    font-size: large;
-    text-align:center;
-    
-}
-.contenr_list-sale{
-    width: 400px;
-    height: 350px;
-}
-.input_search{
-    display: flex;
-    font-size: large;
-}
-
 .wrapper_chitiet{
-    width: 100%;
-    height: 800px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
 .clear{
     width: 100%;
-    height: 90px;
+    height: 110px;
 }
+.chitiet_pro {
+    width: 500px;
+}
+.chitiet_pro > h3{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.chitiet_pro > p{
+    font-size: 30px;
+}
+input.addcart {
+    padding: 12px;
+    background-color: white;
+    border-radius: 25px;
+}
+ 
+  
